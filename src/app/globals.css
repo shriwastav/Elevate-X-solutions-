@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 100%;
+    
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 100%;
+    
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 100%;
+    
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 64%;
+    
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 262 83% 58%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+  .glass-card {
+    @apply bg-zinc-900/50 backdrop-blur-md border border-white/5 shadow-xl;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500;
+  }
+}
