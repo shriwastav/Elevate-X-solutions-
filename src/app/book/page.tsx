@@ -48,7 +48,7 @@ export default function BookConsultationPage() {
             Book Your <span className="text-gradient">Free Consultation</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Let's discuss your project goals, timelines, and how we can help elevate your digital presence.
+            Let&apos;s discuss your project goals, timelines, and how we can help elevate your digital presence.
           </p>
         </motion.div>
 
